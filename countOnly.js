@@ -1,3 +1,4 @@
+//comparing an array vs an object
 const firstNames = [
   "Karl",
   "Salima",
@@ -23,8 +24,8 @@ const countOnly = function (allItems, itemsToCount) {
   //loop through all through array
   for (const item of allItems) {
     //  console.log('item',item)
+    //1 first check if the element in the array is in the object, this is the check if the array matches one of the keys
     if (itemsToCount[item]) {
-      //1 this is the check if the array matches one of the keys
       if (!answerResult[item]) {
         // 2 since we checked at 1 and now we know the keys are matching do an inital count since its not going to be there in the first run
         answerResult[item] = 1;
