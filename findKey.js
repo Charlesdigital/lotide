@@ -25,3 +25,5 @@ const movieRatings = {
   Akelarre: { stars: 3 },
 };
 console.log(findKey(movieRatings, (x) => x.stars === 2));
+
+//movieRatings[movie] gives you the value object {stars: x} in the callback it uses . notation star to get access to the number
