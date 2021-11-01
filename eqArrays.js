@@ -1,8 +1,4 @@
-const assertEqual = function (actual, expected) {
-  if (actual === expected) {
-    console.log(`✅✅✅Assertion Passed ${actual} === ${expected}`);
-  } else console.log(`🛑🛑🛑 Assertion failed ${actual} !== ${expected}`);
-};
+const assertEqual = require("./assertEqual");
 
 //check if each element in the array are the same array1[i] === array2[i]
 function eqArrays(array1, array2) {
@@ -16,3 +12,5 @@ function eqArrays(array1, array2) {
   }
   return true;
 }
+
+module.exports = eqArrays;
